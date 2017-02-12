@@ -17,9 +17,11 @@ app.use(express.static(__dirname+"/images"));  //route
 
 var asset=["asset0.jpg", "asset1.jpg", "asset2.jpg", "asset3.jpg", "asset4.jpg", "asset5.jpg"];
     for (i=0 ; i < asset.length ; i++) {    
+        
         if (i=asset.length+1){
         return;
         }
+        
             resp.send("<img src=" + asset[i] + ">");
            
 }
